@@ -8,6 +8,7 @@ const Home = () => {
         <div>
     <h1>Home</h1>
             {/* <NavigationBar/> */}
+            <h1>This Is Home</h1>
             <Cards/>
             <MainList MainList = "Sadik"/>
             <Form/>

@@ -1,7 +1,7 @@
 import React from 'react';
-import Studant from './Studant';
+// import Studant from './Studant';
 // import Staff from './Staff'
-import Teacher from "./Teacher";
+// import Teacher from "./Teacher";
 import "./main.css";
 
 const MainList = (props) => {
@@ -13,8 +13,8 @@ const MainList = (props) => {
                 eligendi soluta? Tempora officiis porro, fuga autem adipisci, sapiente ipsum ratione,<br />
                  quos optio et eaque fugit laboriosam laborum.</p>
             {/* <Staff/> */}
-            <Studant/>
-            <Teacher/>
+            {/* <Studant/> */}
+            {/* <Teacher/> */}
         </div>
     );
 };

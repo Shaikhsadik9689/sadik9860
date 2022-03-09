@@ -1,9 +1,13 @@
-import React from 'react';
-import  { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ToodoList = () => {
     const [text, setText] = useState("");
     const [data, setData] = useState([]);
+    // const [count, setCount] = useState(0);
+   
+    // useEffect(()=>{
+    //     alert("Sorry");
+    // },[]);
 
     const handleAdd=() =>{
     setData([...data, text]);
@@ -12,16 +16,14 @@ const ToodoList = () => {
     };
     return (
         <div className='App'>
-            <h2>ToodoList</h2>
-            <input 
-            type="text" 
-            className='m-2' 
-            id='input' 
-            onChange={(e)=> setText(e.target.value)} />
+            <h2 contentEditable="true">ToodoList</h2>
 
-            <button onClick={handleAdd}>Add data</button>
+            <input type="text" ClassName='m-2' id='input' onChange={(e)=> setText(e.target.value)} />
+            <button onClick={handleAdd}> Add data </button>
+
             {/* <button onClick={clearHandler}>Clear</button> */}
-            <h1>Todo List</h1>
+            {/* <h1>Todo List</h1> */}
+
             <ul>    
                 {data.map((elem) =>{
                     return(
